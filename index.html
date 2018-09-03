@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale =1.0 shrink-to-fit=yes">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Techifier Accounts</title> 
+    </head>
+    <header style="background:grey color:white">
+        <nav id="titleBar" class="navbar" data-spy="affix" data-offset-top="197">
+            <div class = "row" id="drag-region">
+                <div class="col-xs-6">
+                    <img id="titleBar_logo" src="UI_UX/titleBarButtons/app_logo.svg">
+                </div>
+                <div id = "titleBar_imgs" class="col-xs-6">
+                    <img id="cross_btn" src="UI_UX/titleBarButtons/cross.png">
+                    <img id="maximize_btn" src="UI_UX/titleBarButtons/browser.png">
+                    <img id="minimize_btn" src="UI_UX/titleBarButtons/minimize.png">
+                </div>
+            </div>
+            <!--Menu Bar-->
+            <div id="menuBar" class="row"></div>
+        </nav>
+    </header>
+    <body style="background:grey; color:white">
+	 <!--container Div-->
+        <div id="container">
+            <div id="sideBarContainer">
+                <div id="sideBarHome">
+                    <div id="home_btn">
+                        <img id="home_logo" class="center" src="UI_UX/navBarButtons/app_home.png">    
+                    </div>
+                    <div id="separater"></div>
+                </div>
+                <div id="sideBar" class="navbar">
+                    <ul id="navBtns" class="nav navbar-nav dropdown vertical medium-horizontal menu" data-options="disableHover:true;clickOpen:true" data-dropdown-menu>
+                        <li class="dropdown navBtn">
+                            <p class="dropdown-toggle navLiBtn" data-toggle="dropdown" id="inventory"><span class="navLiBtnLogo"></span>Inventory</p>
+                            <ul class="dropdown-menu" role="menu">
+                                <li id="addItems"><a class="subMenuLinks" href="#" data-toggle="modal" data-target="#myModal" data-backdrop = "static">Add Item</a></li>
+                                <li id="showItems"><a class="subMenuLinks" href="#">Show Inventory</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown navBtn">
+                            <p class="dropdown-toggle navLiBtn" data-toggle="dropdown" id="membership"><span class="navLiBtnLogo"></span>Accounts</p>
+                            <ul class="dropdown-menu" role="menu">
+                                <li id="addAccount"><a class="subMenuLinks" href="#" data-toggle="modal" data-target="#myModal" data-backdrop = "static">Add Buyer</a></li>
+                                <li id="showAccounts"><a class="subMenuLinks" href="#">Show Accounts</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown navBtn">
+                            <p class="dropdown-toggle navLiBtn" data-toggle="dropdown" id="installments"><span class="navLiBtnLogo"></span>Installments</p>
+                            <ul class="dropdown-menu" role="menu">
+                                <li id="addInstallment"><a class="subMenuLinks" href="#" data-toggle="modal" data-target="#myModal" data-backdrop = "static">Update Installment</a></li>
+                                <li id="showOnGoingInstallments"><a class="subMenuLinks" href="#">OnGoing Installments</a></li>
+                                <li id="showCompletedInstallments"><a class="subMenuLinks" href="#">Completed Installments</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown navBtn">
+                            <p class="dropdown-toggle navLiBtn" data-toggle="dropdown" id="supplier"><span class="navLiBtnLogo"></span>Purchase</p>
+                            <ul class="dropdown-menu" role="menu">
+                                <li id="addPurchase"><a class="subMenuLinks" href="#" data-toggle="modal" data-target="#myModal" data-backdrop = "static">Add Purchase</a></li>
+                                <li id="showPurchaseHistory"><a class="subMenuLinks" href="#">Purchase History</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id = "content" class="panel panel-default table-responsive">
+                <table border=1;" id="contentData" class="table table-bordered">
+                    <thead class="contentDataHeader">
+                        <tr>
+                            <th>
+                                SERIAL NUMBER
+                            </th>
+                            <th>
+                                NAME
+                            </th>
+                            <th>
+                                CNIC
+                            </th>
+                            <th>
+                                ACCOUNT NUMBER
+                            </th>
+                            <th>
+                                PHONE NUMBER
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-hover table-condensed contentDataBody ">
+                        <tr>
+                            <td id='serializer'>
+                                SERIAL NUMBER
+                            </td>
+                            <td>
+                                NAME
+                            </td>
+                            <td>
+                                CNIC
+                            </td>
+                            <td>
+                                ACCOUNT NUMBER
+                            </td>
+                            <td>
+                                PHONE NUMBER
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content" onresize="resize_trigger()">
+                    <div class="modal-header">
+                        <img id="cross_btn" class="modalClose" data-dismiss="modal" src="UI_UX/titleBarButtons/cross.png">
+                        <h4 class="modal-title" id="myModalLabel"></h4>
+                    </div>
+                    <div class="modal-body" id="modalBody">
+                        <!--Modal Box fields will be dynamically generated here based upon the option from sideBar selected. -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="modal-close" class="btn btn-default modal-buttonClose" data-dismiss="modal">Cancel</button>
+                        <button type="button" id="save-modal-info" class="btn btn-primary modal-button">Save changes</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
