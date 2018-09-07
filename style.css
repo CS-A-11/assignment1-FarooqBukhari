@@ -1,0 +1,287 @@
+::-webkit-scrollbar{
+    display: none;
+}
+#titleBar {
+    background-image: linear-gradient(to left, #3fc4ff 25%, #00b1ff 75%);
+    padding: 2px 0px 0px 2px;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 99;
+    border-radius: 0px;
+    border-style: none;
+}
+#titleBar_imgs{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+#minimize_btn {
+    float :right;
+    margin: -10px 5px 0px 0px;
+    padding: 0px;
+    height: 42px;
+    width: 35px;
+    -webkit-app-region: no-drag;
+}
+
+#minimize_btn:hover {
+    background-color: rgb(163, 163, 163); /* Gray */
+}
+
+#cross_btn{
+    float :right;
+    margin: -3px -13px 0px 0px;
+    padding: 0px;
+    height: 35px;
+    width: 35px;
+    -webkit-app-region: no-drag;
+}
+#cross_btn:hover {
+    background-color: rgb(230, 75, 75); /* Red */
+}
+
+#maximize_btn{
+    float :right;
+    margin: -3px 5px 0px 0px;
+    padding: 0px;
+    height: 35px;
+    width: 35px;
+    -webkit-app-region: no-drag;
+}
+
+#maximize_btn:hover {
+    background-color: rgb(163, 163, 163); /* Gray */
+}
+
+#titleBar_logo{
+    margin-top: 2px;
+    height: 23px;
+    padding-right: 0px;
+    padding-left: 5px; 
+    margin-right: 0px;
+}
+
+#titleBar #drag-region {
+    width: 100%;
+    height: 100%;
+    -webkit-app-region: drag;
+}
+
+#menuBar{
+    background-color: #cfcfcf;
+    width: 100%;
+    margin: 0px;
+    height: 20px;
+}
+#container{
+    height: 100%;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+#sideBarContainer{
+    background-image: linear-gradient(to bottom, #3fc4ff 25%, #00b1ff 75%);
+}
+
+#sideBarHome{
+    background-image: linear-gradient(to right, #3fc4ff 25%, #00b1ff 75%);
+    margin: 0px;
+    padding:0px;
+    position: fixed;
+    width: 15%;
+    height: 20vh;
+    float: left;
+    border-radius: 0px;
+}
+
+#sideBar{
+    background-image: linear-gradient(to right, #3fc4ff 25%, #00b1ff 75%);
+    margin: 19.8vh 0vh;
+    padding:0px;
+    position: fixed;
+    width: 15%;
+    height: 75.2vh;
+    float: left;
+    border-radius: 0px;
+}
+
+#home_logo{
+    width: 125px;
+    height: 125px;
+    margin-left: auto;
+	margin-right: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+#separater{
+    width: 150px;
+    height: 5px;
+    background-color: white;
+    margin-left: auto;
+	margin-right: auto;
+    display: block;
+    margin-top: 15px;
+}
+
+#navBtns{
+    list-style: none;
+    margin: 0px 0px 0px -35px;
+}
+
+.navBtn{
+    list-style: none;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+.navLiBtnLogo{ 
+    height: 30px;
+    width: 50px;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.navLiBtn{
+    font-family: "Caviar Dreams";
+    font-size: 22px;
+    font-weight: 400;
+    float: right;
+    margin: 0px 0px 0px 5px;
+    color: #ffffff;
+}
+.opennavLiBtn{
+    float:left;
+}
+
+#navBtns .dropdown-menu {
+    position: relative;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    color:#3fc4ff;
+    font-family: "Caviar Dreams";
+    font-size: 16px; 
+}
+
+.activeMenu {
+    color: #3fc4ff;
+}
+
+.subMenuLinks {
+    color: #3fc4ff!important;
+    padding-left: 10px!important; 
+}
+
+#content{
+    background-color: whitesmoke;
+    margin: 0px;
+    padding:0px;
+    width: 85vw;
+    height: 95.2vh;
+    white-space: nowrap;
+    overflow-x:auto;
+    position: relative;
+    float:right;
+    border: 0;
+}
+
+#contentData{
+    margin-top: 3px;
+    white-space: nowrap;
+    overflow-x:auto;
+    position: relative;
+}
+.contentDataHeader{
+    font-family: "Caviar Dreams";
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    background-image: linear-gradient(to right, #3fc4ff 25%, #00b1ff 75%);
+    border: 1px solid #3FC4FF!important;
+}
+.contentDataBody{
+    font-family: "Geosanslight";
+    font-size: 18px;
+    text-align: center;
+    color:lightslategray;
+}
+td{
+    border: 3px solid #3FC4FF!important;
+}
+th{
+    text-align: center;
+    border-right: 3px solid whitesmoke!important;
+    border-left: 0!important;
+}
+.highlight{
+    background-color: lightslategray;
+    color: #ffffff;
+}
+.nonhighlight{
+    background-color: white;
+    color: lightslategray;
+}
+
+.dropdown-toggle navLiBtn{
+    margin-left:-20px;
+}
+/*Needs to be mentioned to use function*/
+.modal-dialog{
+    margin-top: 15%;
+    margin-left: 35%;
+    font-family: "Caviar Dreams";
+    color: #ffffff;
+}
+
+.modal-header{
+    background-image: linear-gradient(to left, #3fc4ff 25%, #00b1ff 75%)!important;    
+}
+
+.modalClose{
+    font-size: 35px;
+    color: white;
+    z-index: 100;
+}
+
+.modal-body{
+    min-height: 200px!important;
+    min-width: 50px!important;
+    color:#3fc4ff;
+    margin-bottom: 50px;
+    white-space: nowrap;
+    overflow-x:auto;
+    position: relative;
+}
+
+.modal-content{
+    min-height: 320px;
+}
+
+.modal-footer{
+    height: auto; 
+    width:100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color:whitesmoke;
+}
+.modal-button{
+    color:#ffffff;
+    background-image: linear-gradient(to left, #3fc4ff 25%, #00b1ff 75%)!important;
+    border: 1px solid #3fc4ff;
+}
+.modal-buttonClose{
+    color:#3fc4ff;
+    border: 1px solid #3fc4ff;
+}
+#cross_btnModal{
+    float :right;
+    margin: -3px -13px 0px 0px;
+    padding: 0px;
+    height: 35px;
+    width: 35px;
+    -webkit-app-region: no-drag;
+}
